@@ -51,6 +51,7 @@ export class AuthService {
       userDto.password,
       user.password,
     );
+
     if (user && passwordEquals) {
       return user;
     }
