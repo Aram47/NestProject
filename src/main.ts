@@ -4,6 +4,11 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function start() {
   const PORT = process.env.PORT || 4458;
+  // console.log(process.env.POSTGRES_HOST);
+  // console.log(process.env.POSTGRES_PORT);
+  // console.log(process.env.POSTGRES_USERNAME);
+  // console.log(process.env.POSTGRES_PASSWORD);
+  // console.log(process.env.POSTGRES_NAME);
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
